@@ -20,7 +20,7 @@ To use it yourself, add the following lines to your `.bashrc` or `.bash_profile`
 ```
 export DID_FILEPATH=~/Dropbox/did.txt;
 alias d='echo $(date "+%a %Y-%m-%d %H:%M:%S") "$@" >> $DID_FILEPATH';
-alias did='tail -100 $DID_FILEPATH';
+alias did='less +F $DID_FILEPATH';
 ```
 
 Tested on OS X.
